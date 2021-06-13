@@ -1,0 +1,11 @@
+Flask==1.1.2
+Flask-Compress==1.9.0
+flask-ngrok==0.0.25
+pandas==1.2.4
+matplotlib==3.4.2
+matplotlib-inline==0.1.2
+numpy==1.19.5
+nltk==3.6.2
+scikit-learn==0.23.2
+seaborn==0.11.1
+wordcloud==1.8.1

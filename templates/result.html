@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Sentiment Analysis</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='Amazon.ico') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- Website Title -->
+	<div class="container">
+		<h2 class='container-heading'><span class="heading_font">Amazon Customer Reviews Sentiment Analysis</h2>
+		<div class='description'>
+			<p>Reviewer's sentiment</p>
+		</div>
+	</div>
+
+	<!-- Result -->
+	<div class="results">
+		{% if prediction==1 %}
+		<h1>Prediction: <span class='safe'>Your Review is Positive</span></h1>
+		<img class="jpg" src="{{ url_for('static', filename='positive_Review.jpg') }}" alt="Positive Review">
+		{% elif prediction==0 %}
+		<h1>Prediction: <span class='danger'>Oh, Your Review is Negative</span></h1>
+		<img class="jpg" src="{{ url_for('static', filename='negative_Review.jpg') }}" alt="Negative Review">
+		{% endif %}
+	</div>
+
+	<!-- Footer -->
+	<div class='footer'>
+		<div class="contact">
+			<a target="_blank" href="https://github.com/saw101"><i class="fab fa-github fa-lg contact-icon"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/imsaw/"><i
+					class="fab fa-linkedin fa-lg contact-icon"></i></a>
+		</div>
+	</div>
+
+</body>
+
+</html>
