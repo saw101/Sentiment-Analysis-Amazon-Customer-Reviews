@@ -17,6 +17,7 @@
 	<div class="container">
 		<h2 class='container-heading'><span class="heading_font">Amazon Customer Reviews Sentiment Analysis</h2>
 		<div class='description'>
+			<br>
 			<p>Reviewer's sentiment</p>
 		</div>
 	</div>
@@ -25,10 +26,10 @@
 	<div class="results">
 		{% if prediction==1 %}
 		<h1>Prediction: <span class='safe'>Your Review is Positive</span></h1>
-		<img class="jpg" src="{{ url_for('static', filename='positive_Review.jpg') }}" alt="Positive Review">
+		<img class="jpg" src="{{ url_for('static', filename='positive_Review.png') }}" alt="Positive Review">
 		{% elif prediction==0 %}
 		<h1>Prediction: <span class='danger'>Oh, Your Review is Negative</span></h1>
-		<img class="jpg" src="{{ url_for('static', filename='negative_Review.jpg') }}" alt="Negative Review">
+		<img class="jpg" src="{{ url_for('static', filename='negative_Review.png') }}" alt="Negative Review">
 		{% endif %}
 	</div>
 
