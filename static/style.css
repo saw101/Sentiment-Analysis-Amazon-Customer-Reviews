@@ -18,9 +18,10 @@ body {
 .container {
   padding: 30px;
   position: relative;
-  background: linear-gradient(45deg, #90963b, #3b8b96, #563b96);
+  background: linear-
+    (45deg, #90963b, #3b8b96, #563b96);
   background-size: 500% 500%;
-  animation: change-gradient 15s ease-in-out infinite;
+  animation: change-gradient 35s ease-in-out infinite;
 }
 @keyframes change-gradient {
   0% {
@@ -105,7 +106,7 @@ body {
   padding: 20px;
   background: linear-gradient(45deg, #90963b, #3b8b96, #563b96);
   background-size: 500% 500%;
-  animation: change-gradient 10s ease-in-out infinite;
+  animation: change-gradient 40s ease-in-out infinite;
 }
 
 .footer-description {
